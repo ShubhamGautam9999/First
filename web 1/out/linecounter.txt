@@ -1,0 +1,54 @@
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2022-03-16 13:45:22
+count workspace : d:\websites\web 1
+total files : 36
+total code lines : 465
+total comment lines : 7
+total blank lines : 140
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |          .html|             88|              4|             77|     19|
+   |           .css|            377|              3|             63|     81|
+   -------------------------------------------------------------------------
+images\arthur.jpg, it is a binary file.
+images\background.jpg, it is a binary file.
+images\big-brother.jpg, it is a binary file.
+images\Catch22.jpg, it is a binary file.
+images\cormac.jpg, it is a binary file.
+images\facebook-copy.png, it is a binary file.
+images\facebook.png, it is a binary file.
+images\george-orwell.jpg, it is a binary file.
+images\George_R._R._Martin.jpg, it is a binary file.
+images\got.jpg, it is a binary file.
+images\Heller.jpg, it is a binary file.
+images\holmes.jpg, it is a binary file.
+images\Instagram-copy.png, it is a binary file.
+images\Instagram.png, it is a binary file.
+images\jane.jpg, it is a binary file.
+images\JKROWLING.jpg, it is a binary file.
+images\king.jpg, it is a binary file.
+images\Linkedin-copy.png, it is a binary file.
+images\Linkedin.png, it is a binary file.
+images\logo.png, it is a binary file.
+images\magnifying-glass.png, it is a binary file.
+images\nocountry.jpg, it is a binary file.
+images\originalimages\big-brother.jpg, it is a binary file.
+images\originalimages\catch22.jpg, it is a binary file.
+images\originalimages\got.png, it is a binary file.
+images\originalimages\holmes.jpg, it is a binary file.
+images\originalimages\nocountry.jpg, it is a binary file.
+images\originalimages\potter.jpg, it is a binary file.
+images\originalimages\pride.jpg, it is a binary file.
+images\potter.jpg, it is a binary file.
+images\pride.jpg, it is a binary file.
+images\shining.jpg, it is a binary file.
+images\twitter-copy.png, it is a binary file.
+images\twitter.png, it is a binary file.
+index.html, code is 88, comment is 4, blank is 77.
+style.css, code is 377, comment is 3, blank is 63.
+===============================================================================
