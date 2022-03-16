@@ -1,0 +1,45 @@
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2022-03-16 13:36:42
+count workspace : d:\websites\web2
+total files : 27
+total code lines : 1627
+total comment lines : 98
+total blank lines : 322
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |          .html|             76|              0|             60|    4.7|
+   |           .css|           1551|             98|            262|     95|
+   -------------------------------------------------------------------------
+css\phone.css, code is 397, comment is 25, blank is 67.
+css\smallpcs.css, code is 387, comment is 26, blank is 65.
+css\style.css, code is 377, comment is 21, blank is 64.
+css\tab.css, code is 390, comment is 26, blank is 66.
+images\attitude.png, it is a binary file.
+images\bothersofdestruction.jpg, it is a binary file.
+images\Brethart.jpg, it is a binary file.
+images\divas.png, it is a binary file.
+images\dx.jpg, it is a binary file.
+images\facebook-copy.png, it is a binary file.
+images\facebook.png, it is a binary file.
+images\hulk.jpg, it is a binary file.
+images\Instagram-copy.png, it is a binary file.
+images\Instagram.png, it is a binary file.
+images\John-Cena.png, it is a binary file.
+images\legends.jpg, it is a binary file.
+images\Linkedin-copy.png, it is a binary file.
+images\Linkedin.png, it is a binary file.
+images\logo.png, it is a binary file.
+images\ruthless.png, it is a binary file.
+images\Stonecold.jpg, it is a binary file.
+images\therock.jpg, it is a binary file.
+images\trish-stratus.jpg, it is a binary file.
+images\twitter-copy.png, it is a binary file.
+images\twitter.png, it is a binary file.
+index.html, code is 76, comment is 0, blank is 60.
+layout.jpg, it is a binary file.
+===============================================================================
