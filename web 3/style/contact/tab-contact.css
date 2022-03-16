@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+.logo{
+    display: flex;
+    /* background: darksalmon; */
+    /* height: 7.5em; */
+    width: 7.9em;
+    margin: auto 1rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo a{
+    color: white;
+    font-size: 1.7em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.nav{
+    display: flex;
+    height: 7em;
+    width: 48em;
+    /* background: darkorchid; */
+    margin: auto 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main */
+
+.submit-btn{
+    width: 6rem;
+    /* height: 2rem; */
+    padding: 0.5em;
+    border: 0.3em solid white;
+    color: white;
+    font-family: cursive;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin: 1em 0em 1em 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0.3em white, 0 0 0.3em white;
+    text-shadow: 0 0 0.09em currentColor, 0 0 0.09em currentColor;
+    text-decoration: none; 
+
+}
+
+/* sidebar */
+
+.sidebar input{
+    display: flex;
+    width: 13rem;
+    font-size: 0.7em;
+    /* height: 2rem; */
+    padding: 0.4em;
+    position: absolute;
+    right: 1em;
+    top: 7em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sidebar .searchbtn{
+    width: 4rem;
+    /* height: 2rem; */
+    padding: 0.3em;
+    border: 0.3em solid white;
+    color: white;
+    font-family: cursive;
+    font-size: 0.7rem;
+    cursor: pointer;
+    margin: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0.3em white, 0 0 0.3em white;
+    text-shadow: 0 0 0.09em currentColor, 0 0 0.09em currentColor;
+    text-decoration: none;
+    position: absolute;
+    right: 1em;
+    top: 10em;
+}
+
+.searchbtn:hover{
+    color: black;
+    background: white;
+    box-shadow: 0 0 0.5em white, 0 0 0.5em white, 0 0 0.5em white;
+    text-shadow: 0 0 0.09em currentColor, 0 0 0.09em currentColor;
+}
+
+.sidebar .sidecontent{
+    /* border: 2px solid blue; */
+    display: flex;
+    position: absolute;
+    top: 11em;
+    right: 0.9em;
+    height: 72rem;  
+    width: 14rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar h1 {
+    font-size: 2em;
+    color: white;
+    text-align: right;
+}
+
+.sidebar p {
+    font-size: 2.7ch;
+    color: white;
+    text-align: right;
+}
+
+.sidebar .social{
+    /* border: 2px solid green; */
+    height: 20em;
+    padding: 1em;
+    width: 16em;
+    position: absolute;
+    bottom: 2em;
+    right: 0em;
+}
+
+.sidebar .social h1{
+    font-size: 2em;
+    color: white;
+    text-align: left;
+}
+
+.sidebar .social .icon{
+    /* border: 2px solid blue; */
+    position: absolute;
+    bottom: 2em;
+    width: 15em;
+    /* height: 12em; */
+    right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sidebar .social .icon .fa-customize{
+    margin: 0.3em;
+    color: white;
+}
+
+
+/* media */
+
+@media (max-width:1064px) {
+
+    /* header */
+    .header{
+        background: rgb(61, 60, 60);
+        /* background-image: url(../images/header1.jpg); */
+        grid-column: span 4;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+    }
+    
+    .header::before{
+        content: "";
+        position: absolute;
+        height: 648px;
+        width: 100%;
+        background: url(../../images/contact.jpg) no-repeat center center/cover;
+        opacity: 0.6;
+        overflow: hidden;
+    }
+    
+    .logo{
+        display: flex;
+        /* background: darksalmon; */
+        height: 5em;
+        width: 18.5em;
+        margin: auto 0.4rem;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    
+    .logo a{
+        color: white;
+        font-size: 1.5em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: none;
+    }
+    
+    /* navbar */
+    
+    .nav{
+        display: flex;
+        height: 7em;
+        width: 60em;
+        /* background: darkorchid; */
+        margin: auto 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* text-decoration: none; */
+    }
+    
+    .nav ul li a{
+        z-index: 100;
+        text-decoration: none;
+        margin: 0.5em;
+        font-size: 1.3em;
+        color: white;
+    }
+    
+    #active{
+        border-bottom: 0.2em solid red;
+    }
+    
+    .nav ul li a:hover{
+        border-bottom: 0.2em solid red;
+    }
+    
+    .nav ul li a:active{
+        color: rgb(156, 1, 1);
+        border-bottom: 4px solid rgb(255, 255, 255);
+    }
+    
+    .header .btn{
+        /* height: 3rem; */
+        width: 10rem;
+        position: relative;
+        border: 0.3em solid white;
+        /* border-radius: 0.4em; */
+        color: white;
+        font-family: cursive;
+        font-size: 0.7em;
+        bottom: 15.625em;
+        right: 3.75em;
+        cursor: pointer;
+        margin: 0.3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 0 0 0.3em white, 0 0 0.3em white;
+        text-shadow: 0 0 0.09em currentColor, 0 0 0.09em currentColor;
+        padding: 0.5em;
+        /* background: black; */
+    }
+    
+   /* main */
+
+    .contact-container{
+    width: 100%;
+    height: 64em;
+    position: absolute;
+    bottom: 31em;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    
+    }
+
+    .info{
+    /* border: 2px solid red; */
+    width: 100%;   
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+    justify-content: none;
+    align-items: center;
+    order: 2;
+    }
+
+    .info h2{
+    font-size: 1.2em;
+    color: white;
+    padding: 0.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .form{
+    /* border: 2px solid blue; */
+    width: 100%;
+    padding: 0.5em;
+    display: flex;
+    order: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .form h2{
+    font-size: 2em;
+    margin-right: 3em;
+    color: white;
+    padding: 0.6em 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .form-container{
+    height: 46em;
+    width: 90%;
+    margin: 0 0.2em;
+    padding-bottom: 0.6em;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .form-container input{
+    width: 80%;
+    font-size: 1em;
+    padding: 0.9em;
+    margin: 2em 0 0 0;
+    border: 1px solid white;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.5em white, 0 0 0.5em white, 0 0 0.5em white;
+    }
+
+    .form-container textarea{
+    width: 80%;
+    font-size: 1.5em;
+    padding: 0.5em;
+    margin: 2em 0 0 0;
+    border: 1px solid white;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.5em white, 0 0 0.5em white, 0 0 0.5em white;
+    }
+
+    .submit-btn{
+        margin: 2em 0 0 0;
+    }
+
+    .map{
+        /* border: 2px solid violet; */
+        height: 25em;
+        width: 100%;
+        position: absolute;
+        bottom: 3em;
+        padding: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .map iframe{
+        height: 100%;
+        width: 100%;
+        border-radius: 1em;
+    }
+
+    /* sidebar */
+
+    .sidebar input{
+        width: 9rem;
+        font-size: 0.6em;
+    }
+
+    .sidebar .searchbtn{
+        width: 3.2rem;
+        font-size: 0.7rem;
+        top: 9em;
+    }
+
+    .sidebar .sidecontent{
+        /* border: 2px solid blue; */
+        top: 10em;
+        right: 0em;
+        height: 73rem;
+        width: 100%;
+        padding: 0.6em;
+        align-items: stretch;
+    }
+
+    .sidebar h1 {
+        font-size: 1.5em;
+        color: white;
+        text-align: left;
+    }
+    
+    .sidebar p {
+        font-size: 1.14em;
+        color: white;
+        text-align: left;
+    }
+
+    .sidebar .social{
+        /* border: 2px solid green; */
+        height: 23em;
+        padding: 1em;
+        width: 10em;
+        position: absolute;
+        bottom: 2em;
+        right: 0em;
+    }
+    
+    .sidebar .social h1{
+        font-size: 2rem;
+        color: white;
+        text-align: right;
+    }
+    
+    .sidebar .social .icon{
+        /* border: 2px solid blue; */
+        position: absolute;
+        bottom: 2em;
+        width: 10em;
+        /* height: 12em; */
+        right: 0em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .sidebar .social .icon .fa-customize{
+        margin: 0.3em;
+        color: white;
+    }
+
+   
+}

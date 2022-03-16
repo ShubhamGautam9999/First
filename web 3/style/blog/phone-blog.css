@@ -1,0 +1,614 @@
+
+/* css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+}
+
+/* container */
+
+.container {
+    height: 150rem;
+    width: 100%;
+    display: grid;
+    /* background-color: grey; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 1fr 1fr 0.2fr;
+    gap: 1em 0em;
+    /* gap: 0.25em 0.25em; */
+}
+
+/* header */
+
+.header{
+    background: rgb(61, 60, 60);
+    /* background-image: url(../images/header1.jpg); */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.logo{
+    display: flex;
+    /* background: darksalmon; */
+    /* height: 7.5em; */
+    width: 14em;
+    margin: auto 0.2rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo a{
+    color: white;
+    font-size: 1.4em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+/* navbar */
+
+.nav{
+    display: flex;
+    height: 7em;
+    width: 30em;
+    /* background: darkorchid; */
+    margin: auto 0.1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-decoration: none; */
+}
+
+.nav ul li a{
+    z-index: 100;
+    text-decoration: none;
+    margin: 0.4em;
+    font-size: 1em;
+    color: white;
+}
+
+#active{
+    border-bottom: 0.2em solid red;
+}
+
+.nav ul li a:hover{
+    border-bottom: 0.2em solid red;
+}
+
+.nav ul li a:active{
+    color: rgb(156, 1, 1);
+    border-bottom: 0.2em solid rgb(255, 255, 255);
+}
+
+.header .btn{
+    /* height: 3rem; */
+    width: 8rem;
+    position: relative;
+    border: 0.3em solid white;
+    /* border-radius: 0.4em; */
+    color: white;
+    font-family: cursive;
+    font-size: 0.7em;
+    bottom: 10em;
+    right: 4.75em;
+    cursor: pointer;
+    margin: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0.3em white, 0 0 0.3em white;
+    text-shadow: 0 0 0.09em currentColor, 0 0 0.09em currentColor;
+    padding: 0.5em;
+    /* background: black; */
+}
+
+.header .btn:hover{
+    color: black;
+    background: white;
+    box-shadow: 0 0 0.5em white, 0 0 0.5em white, 0 0 0.5em white;
+    text-shadow: 0 0 0.09em currentColor, 0 0 0.09em currentColor;
+}
+
+/* main */
+
+.main{
+    /* background: chocolate; */
+    background-image: linear-gradient(to bottom right, black, rgb(70, 70, 70));
+    height: 100%;
+    width: 100%;
+    /* grid-column: span 3; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.main h1{
+    position: absolute;
+    font-size: 2em;
+    top: 0.5em;
+    color: white;
+    text-shadow: 0 0 0.4em black;
+}
+
+.blog-container{
+    /* border: 2px solid green; */
+    height: 48.5em;
+    width: 100%;
+    position: relative;
+    top: 4em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.blog-card{
+    /* border: 2px solid white; */
+    box-shadow: 0 0 0.7em black, 0 0 0.7em black, 0 0 0.7em black;
+    height: 10em;
+    width: 100%;
+    border-radius: 2em;
+    display: flex;
+    margin: 1em 0;
+}
+
+.blog-body{
+    /* border: 2px solid blue; */
+    height: 100%;
+    width: 100%;
+    margin-right: 0px;
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.blog-body h1{
+    font-size: 1.2em;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0em;
+    position: absolute;
+    bottom: 4em;
+}
+
+.blog-body p{
+    position: absolute;
+    bottom: 3em;
+    font-size: 0.8em;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 1em;
+}
+
+.blog-meta{
+    /* border: 2px solid violet; */
+    height: 31%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    padding: 0.1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.blog-meta img{
+    border: 1px solid white;
+    border-radius: 3em;
+    height: 1.6em;
+    width: 1.6em;
+    margin: 0 0.5em;
+}
+
+.blog-meta h2{
+    font-size: 0.5em;
+    color: white;
+    padding: 0.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* sidebar */
+
+.sidebar{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    grid-row: 3/4;
+    overflow-y: hidden;
+    /* align-items: center; */
+    /* grid-column: 4/5; */
+}
+
+.sidebar input{
+    width: 12rem;
+    font-size: 0.6em;
+    top: 5em;
+}
+
+.sidebar .searchbtn{
+    width: 3.2rem;
+    font-size: 0.7rem;
+    top: 7em;
+}
+
+.sidebar .sidecontent{
+    /* border: 2px solid blue; */
+    top: 8em;
+    right: 0em;
+    height: 34.3rem;
+    width: 100%;
+    padding: 1em;
+    align-items: stretch;
+}
+
+.sidebar h1 {
+    font-size: 1.8em;
+    color: white;
+    text-align: left;
+}
+
+.sidebar p {
+    font-size: 1.3em;
+    color: white;
+    text-align: left;
+}
+
+.sidebar .social{
+    /* border: 2px solid green; */
+    height: 10em;
+    padding: 1em;
+    width: 100vw;
+    position: absolute;
+    bottom: 0em;
+    right: 0em;
+    display: flex;
+}
+
+.sidebar .social h1{
+    font-size: 3rem;
+    color: white;
+    text-align: right;
+}
+
+.sidebar .social .icon{
+    /* border: 2px solid blue; */
+    position: absolute;
+    bottom: 0.2em;
+    width: 10em;
+    /* height: 12em; */
+    right: 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sidebar .social .icon .fa-customize{
+    margin: 0.3em;
+    color: white;
+}
+
+
+/* footer*/
+
+.footer{
+    background-image: linear-gradient(to bottom right, grey 30%, black);
+    grid-row: 4/5;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:552px) {
+    .container {
+        height: 150rem;
+        width: 100%;
+        display: grid;
+        /* background-color: grey; */
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1.5fr 1fr 0.05fr;
+        gap: 1em 0em;
+        /* gap: 0.25em 0.25em; */
+    }
+
+    .header{
+        background: rgb(61, 60, 60);
+        /* background-image: url(../images/header1.jpg); */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        overflow-y: hidden;
+    }
+    
+    .logo{
+        display: flex;
+        /* background: darksalmon; */
+        height: 2em;
+        width: 20em;
+        margin-left: 0.3em;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 6em;
+        z-index: 1;
+    }
+    
+    .logo a{
+        color: white;
+        font-size: 1.22em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: none;
+    }
+    
+    /* navbar */
+    
+    .nav{
+        display: flex;
+        height: 15em;
+        width: 34em;
+        /* background: darkorchid; */
+        margin: auto 0rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        bottom: -2em;
+    }
+    
+    .nav ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* text-decoration: none; */
+    }
+    
+    .nav ul li a{
+        z-index: 100;
+        text-decoration: none;
+        margin: 1em;
+        font-size: 0.9em;
+        color: white;
+    }
+    
+    .header .btn{
+        /* height: 3rem; */
+        width: 9rem;
+        position: relative;
+        border: 0.3em solid white;
+        /* border-radius: 0.4em; */
+        color: white;
+        font-family: cursive;
+        font-size: 0.53em;
+        bottom: 12em;
+        right: 3em;
+        cursor: pointer;
+        margin: 0.4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 0 0 0.3em white, 0 0 0.3em white;
+        text-shadow: 0 0 0.09em currentColor, 0 0 0.09em currentColor;
+        padding: 0.5em;
+        /* background: black; */
+    }
+
+    /* main  */
+
+    .blog-container{
+        /* border: 2px solid green; */
+        height: 70.7em;
+        width: 100%;
+        position: relative;
+        top: 4em;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .blog-card{
+        /* border: 2px solid white; */
+        box-shadow: 0 0 0.7em black, 0 0 0.7em black, 0 0 0.7em black;
+        height: 17em;
+        width: 100%;
+        border-radius: 2em;
+        display: flex;
+        margin: 1em 0;
+    }
+    
+    .blog-body{
+        /* border: 2px solid blue; */
+        height: 100%;
+        width: 100%;
+        margin-right: 0px;
+        position: relative;
+        display: flex;
+        /* flex-direction: column; */
+    }
+    
+    .blog-body h1{
+        font-size: 1.2em;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0em;
+        position: absolute;
+        bottom: 4em;
+    }
+    
+    .blog-body p{
+        position: absolute;
+        bottom: 5em;
+        font-size: 0.8em;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: 0 1em;
+    }
+    
+    .blog-meta{
+        /* border: 2px solid violet; */
+        height: 31%;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        padding: 0.1em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .blog-meta img{
+        border: 1px solid white;
+        border-radius: 3em;
+        height: 1.6em;
+        width: 1.6em;
+        margin: 0 0.5em;
+    }
+    
+    .blog-meta h2{
+        font-size: 0.5em;
+        color: white;
+        padding: 0.3em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* sidebar  */
+
+    .sidebar input{
+        width: 12rem;
+        font-size: 0.6em;
+        top: 3em;
+    }
+    
+    .sidebar .searchbtn{
+        width: 3.2rem;
+        font-size: 0.7rem;
+        top: 5em;
+    }
+    
+    .sidebar .sidecontent{
+        /* border: 2px solid blue; */
+        top: 6em;
+        right: 0em;
+        height: 35rem;
+        width: 100%;
+        padding: 1em;
+        align-items: stretch;
+    }
+    
+    .sidebar h1 {
+        font-size: 1.2em;
+        color: white;
+        text-align: left;
+    }
+    
+    .sidebar p {
+        font-size: 1.05em;
+        color: white;
+        text-align: left;
+    }
+    
+    .sidebar .social{
+        /* border: 2px solid green; */
+        height: 10em;
+        padding: 1em;
+        width: 100vw;
+        position: absolute;
+        bottom: 0em;
+        right: 0em;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .sidebar .social h1{
+        font-size: 1.9rem;
+        color: white;
+        text-align: center;
+    }
+    
+    .sidebar .social .icon{
+        /* border: 2px solid blue; */
+        position: absolute;
+        bottom: 0.2em;
+        width: 100vw;
+        height: 6em;
+        right: 0em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .sidebar .social .icon .fa-customize{
+        margin: 0.3em;
+        color: white;
+    }
+
+    
+    /* footer  */
+
+    .footer{
+    background-image: linear-gradient(to bottom right, grey 30%, black);
+    /* grid-column: span 4; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.topBtn{
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    width: 2em;
+    height: 2em;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.topBtn .fa-customize{
+    color: black;
+    font-size: x-large;
+}
+
+.topBtn .fa-customize:active{
+    color: maroon;
+}
+    
+
+
+}
+
+
+
+
+
+
+
